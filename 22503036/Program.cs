@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("Write something");
 
-        string UserInput = Console.ReadLine();
+        string UserInput = Console.ReadLine() ?? "";
 
         if (int.TryParse(UserInput, out int number))
         {
